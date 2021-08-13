@@ -1,0 +1,81 @@
+header {
+  color:white;
+  display: flex;
+  padding: 1rem;
+  background: purple;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li{
+  background:blue;
+  display: flex;
+  margin: 0.2rem;
+}
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+
+article{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside{
+  color:white;
+  background:blue;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+footer {
+  color:white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 400px) {
+  /* For mobile phones: */
+  .grid {
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    grid-template-areas: 
+      "header  header  header"
+      "nav city aside"
+      "footer footer footer";
+  }
+  /*
+  .nav, .city{
+    display: flex;
+    flex-direction: column;
+  }
+  */
+  
+}
+
+
+.nav {
+  grid-area: nav;
+}
+
+.city {
+  grid-area: city;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
